@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<adm>
+	<sistemas>
+		<sistema>
+			<id>1</id>
+			<nome>Sistema A</nome>
+			<link>http://sistemaA.com.br</link>
+		</sistema>
+		<sistema>
+			<id>2</id>
+			<nome>Sistema B</nome>
+			<link>http://sistemaB.com.br</link>
+		</sistema>
+	</sistemas>
+	<perfis>
+		<perfil>
+			<id>1</id>
+			<sis_id>1</sis_id>
+			<nome>Administrador</nome>
+		</perfil>
+		<perfil>
+			<id>2</id>
+			<sis_id>1</sis_id>
+			<nome>Usuário Comum</nome>
+		</perfil>
+		<perfil>
+			<id>3</id>
+			<sis_id>2</sis_id>
+			<nome>Administrador</nome>
+		</perfil>
+		<perfil>
+			<id>4</id>
+			<sis_id>2</sis_id>
+			<nome>Usuário Comum</nome>
+		</perfil>
+	</perfis>
+	<entidades>
+		<entidade>
+			<id>1</id>
+			<nome>Empresa A</nome>
+			<responsavel>João Silva</responsavel>
+			<terminal_prefixo>100</terminal_prefixo>
+		</entidade>
+		<entidade>
+			<id>2</id>
+			<nome>Empresa B</nome>
+			<responsavel>Maria Santos</responsavel>
+			<terminal_prefixo>200</terminal_prefixo>
+		</entidade>
+	</entidades>
+	<usuarios>
+		<usuario>
+			<id>1</id>
+			<ent_id>1</ent_id>
+			<nome>Carlos Souza</nome>
+			<login>carlos.souza</login>
+			<senha>123456</senha>
+			<bloqueado>false</bloqueado>
+			<data_acesso>2022-03-01T08:30:00</data_acesso>
+			<perfis>
+				<perfil_id>1</perfil_id>
+				<perfil_id>2</perfil_id>
+			</perfis>
+		</usuario>
+		<usuario>
+			<id>2</id>
+			<ent_id>2</ent_id>
+			<nome>Ana Oliveira</nome>
+			<login>ana.oliveira</login>
+			<senha>abcdef</senha>
+			<bloqueado>true</bloqueado>
+			<data_acesso>2022-03-02T09:45:00</data_acesso>
+			<perfis>
+				<perfil_id>4</perfil_id>
+			</perfis>
+		</usuario>
+	</usuarios>
+</adm>
